@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1554798771135" stop="1554798779530" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : StarWars</name>
+    <title>Default Suite : StarWars</title>
+    <test-cases>
+        <test-case start="1554798771695" stop="1554798774658" status="passed">
+            <name>StarTest</name>
+            <description>Извличение значений из тела сообщения в переменную nextParams</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="StarWars"/>
+                <label name="testClass" value="StarWars.StarWars"/>
+                <label name="testMethod" value="StarTest"/>
+                <label name="host" value="BKBTH5J"/>
+                <label name="thread" value="12140@BKBTH5J.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1554798774658" stop="1554798775452" status="passed">
+            <name>StarTest2</name>
+            <description>Извличения всего тела ответа в переменные</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="StarWars"/>
+                <label name="testClass" value="StarWars.StarWars"/>
+                <label name="testMethod" value="StarTest2"/>
+                <label name="host" value="BKBTH5J"/>
+                <label name="thread" value="12140@BKBTH5J.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1554798775452" stop="1554798776428" status="passed">
+            <name>StarTestPeople</name>
+            <description>Тут может быть описаие теста + здесть мы сравниваем значение в масиве которе является 2 по счету используем  Matchers.is</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="StarWars"/>
+                <label name="testClass" value="StarWars.StarWars"/>
+                <label name="testMethod" value="StarTestPeople"/>
+                <label name="host" value="BKBTH5J"/>
+                <label name="thread" value="12140@BKBTH5J.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1554798776438" stop="1554798779520" status="passed">
+            <name>StarTestschema</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="StarWars"/>
+                <label name="testClass" value="StarWars.StarWars"/>
+                <label name="testMethod" value="StarTestschema"/>
+                <label name="host" value="BKBTH5J"/>
+                <label name="thread" value="12140@BKBTH5J.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
