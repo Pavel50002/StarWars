@@ -9,7 +9,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
-import java.util.List;
 
 import static InterFace.EndPoints.People1;
 import static InterFace.EndPoints.Schema;
@@ -56,11 +55,11 @@ public class StarWars {
 
                 .extract().path("required");
 
-        List list = (List) given()
-                .when().get(Schema)
-                .jsonPath().getList("required");
+      //  List list = (List) given()
+        //        .when().get(Schema)
+        //        .jsonPath().getList("required");
 
-        list.stream().forEach(element -> System.out.println("вот элемент в листе " + element));
+      //  list.stream().forEach(element -> System.out.println("вот элемент в листе " + element));
 
 
         HashMap mapa = (HashMap) given()
@@ -85,6 +84,8 @@ public class StarWars {
                         .when().get(Schema)
                         .then()
                         .body("description", equalTo("A person within the Star Wars universe")) // здесь мы проверили что описание соответствует описанию)
+                        .body("type", equalTo("object"))
+                        .log().all()
                         .extract()// извличение значения в нашем случаии по пути , путь представлен ниже
                         .path("title");// а вот и путь)
         get(nextParams); // получаем переменную возможно для последующей передачи в параметрах
