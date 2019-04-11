@@ -35,3 +35,6 @@ test {
         systemProperty 'allure.results.directory', 'C:/Users/pershov/.jenkins/workspace/StarWars/target/allure-results'
     }
 }
+compileTestJava {
+    options.encoding = "UTF-8"
+}
