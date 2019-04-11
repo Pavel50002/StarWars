@@ -1,6 +1,5 @@
 package StarWars;
 
-import com.sun.org.glassfish.gmbal.Description;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -27,7 +26,7 @@ public class StarWars {
 
 
     @Test(description = "Тут может быть описаие теста + здесть мы сравниваем значение в масиве которе является 2 по счету используем  Matchers.is")
-    @Description("здесть мы сравниваем значение в масиве которе является 2 по счету используем  Matchers.is")
+   // @Description("здесть мы сравниваем значение в масиве которе является 2 по счету используем  Matchers.is")
 
     public void StarTestPeople() {
 
@@ -43,7 +42,7 @@ public class StarWars {
     }
 
     @Test
-    @Description("Тут мы учимся создавать мапу и лист")
+   // @Description("Тут мы учимся создавать мапу и лист")
     public void StarTestschema() {
         StarWars schema = new StarWars();
         given()
