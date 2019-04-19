@@ -83,7 +83,7 @@ public class StarWars {
                         .when().get(Schema)
                         .then()
                         .body("description", equalTo("A person within the Star Wars universe")) // здесь мы проверили что описание соответствует описанию)
-                        .body("type", equalTo("object1"))
+                        .body("type", equalTo("object"))
                         .log().all()
                         .extract()// извличение значения в нашем случаии по пути , путь представлен ниже
                         .path("title");// а вот и путь)
