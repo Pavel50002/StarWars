@@ -19,7 +19,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class StarWars {
 
 
-    @BeforeTest
+    @BeforeTest()
     public void requestSpec() {
         RestAssured.baseURI = "https://swapi.co/api/";
     }
@@ -82,10 +82,10 @@ public class StarWars {
                 given()//если нужно указать параметры то их можно указать сюда
                         .when().get(Schema)
                         .then()
-                        .body("description", equalTo("A person within the Star Wars universe")) // здесь мы проверили что описание соответствует описанию)
-                        .body("type", equalTo("object1"))
+                        .body("description", equalTo("O person within the Star Wars universe")) // здесь мы проверили что описание соответствует описанию)
+                        .body("type", equalTo("object"))
                         .log().all()
-                        .extract()// извличение значения в нашем случаии по пути , путь представлен ниже
+                        .extract()// извличение значения в нашем случаии по пути , путь представлен нижеgit
                         .path("title");// а вот и путь)
         get(nextParams); // получаем переменную возможно для последующей передачи в параметрах
         System.out.println(nextParams);// ну и печатаем
