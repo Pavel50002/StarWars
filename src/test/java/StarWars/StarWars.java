@@ -108,5 +108,6 @@ public class StarWars {
         System.out.println();
         System.out.println(nextParams);
         System.out.println(headerValue);
+        System.out.println(headerValue);
     }
 }
